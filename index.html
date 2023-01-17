@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Mildred Group Survey Form</h1>
+        <p><em>Thank you for taking the time to help us improve the platform</em></p>
+    </div>
+    <div class="form">
+        <form action="#" autocomplete="">
+            <label for="name">Name</label> 
+            <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+
+            <label for="age">Age <span>(optional)</span></label>
+            <input type="number" id="age" name="age" placeholder="Age" min="13" max="99"> <br>
+
+            <label for="role">Which option best describes your current role?</label><br>
+            <select id="role" name="role" required>
+                <option value="">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+           <p>Would you recommend Mildred Group to a friend?</p>
+            <input type="radio" name="recommend" id="definitely" value="Definitely" checked>
+            <label for="definitely">Definitely</label> <br>
+
+            <input type="radio" name="recommend" id="maybe" value="Maybe">
+            <label for="maybe">Maybe</label> <br>
+
+            <input type="radio" name="recommend" id="notsure" value="Not Sure">
+            <label for="notsure">Not sure</label> <br>
+
+            <label class="space" for="feature">What is your favorite feature of Mildred Group?</label><br>
+            <select id="feature" name="feature" required>
+                <option value="">Select an option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Projects">Projects</option>            
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option></select><br>
+
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+
+                <input type="checkbox" name="improvement" id="frontend" value="Front-end Projects">
+                <label for="frontend">Front-end Projects</label><br>
+
+                <input type="checkbox" name="improvement" id="backend" value="Back-end Projects">
+                <label for="backend">Back-end Projects</label><br>
+
+                <input type="checkbox" name="improvement" id="data" value="Data Visualization">
+                <label for="data">Data Visualization</label><br>
+
+                <input type="checkbox" name="improvement" id="challenges" value="Challenges">
+                <label for="challenges">Challenges</label><br>
+
+                <input type="checkbox" name="improvement" id="opensource" value="opensource">
+                <label for="opensource">Open Source Community</label><br>
+
+                <input type="checkbox" name="improvement" id="gitter" value="Gitter">
+                <label for="gitter">Gitter help rooms</label><br>
+
+                <input type="checkbox" name="improvement" id="videos" value="videos">
+                <label for="videos">Videos</label><br>
+
+                <input type="checkbox" name="improvement" id="meetups" value="meetups">
+                <label for="meetups">City Meetups</label><br>
+
+                <input type="checkbox" name="improvement" id="wiki" value="wiki">
+                <label for="wiki">Wiki</label><br>
+
+                <input type="checkbox" name="improvement" id="forum" value="forum">
+                <label for="forum">Forum</label><br>
+
+                <input type="checkbox" name="improvement" id="courses" value="courses">
+                <label for="courses">Additional Courses</label><br>
+
+                <label for="comments" class="space">Any comments or suggestions?</label><br>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="5" cols="30"></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+</body>
+</html>
